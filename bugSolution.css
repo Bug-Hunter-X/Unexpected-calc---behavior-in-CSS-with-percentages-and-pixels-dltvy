@@ -1,0 +1,12 @@
+/* bugSolution.css */
+/* Instead of directly using calc() with percentages and pixels, consider using a more reliable approach like flexbox or grid. This example demonstrates a flexbox solution: */
+.container {
+  display: flex;
+  width: 100%;
+}
+.item {
+  flex-grow: 1;
+  margin-right: 10px; /* This provides the equivalent of 10px spacing */
+  background-color: lightblue; /* Example styling */
+}
+/* If a pure CSS-only solution using calc() is required, you might need to introduce a JavaScript solution to ensure accurate measurement before setting the width using calc().  However, this is generally considered less efficient and more fragile than using flexbox or grid */
